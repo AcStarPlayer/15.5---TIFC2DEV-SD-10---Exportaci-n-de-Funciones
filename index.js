@@ -1,17 +1,17 @@
 const { Usuario, UsuarioVIP } = require("./usuario");
 const { Producto, ProductoDigital } = require("./producto");
 
-const cliente = new Usuario("Brayan", "brayan@mail.com");
-const admin = new Usuario("Ana", "ana@mail.com", "administrador");
-const vip = new UsuarioVIP("Carlos", "vip@mail.com", "Gold");
+const cliente = new Usuario("Brayan", "brayanc@gmail.com");
+const admin = new Usuario("Andres", "andresc@gmail.com", "administrador");
+const vip = new UsuarioVIP("Carlos", "carlos.vip@gmail.com", "BlackGold");
 
 cliente.desactivar();
 
-const p1 = new Producto("Camiseta", 50000, "Ropa");
-const p2 = new Producto("Audifonos", 120000, "Tecnologia");
+const p1 = new Producto("Camiseta Oversize", 75000, "Ropa");
+const p2 = new Producto("AirPodsPro2", 870000, "Tecnologia");
 
-const d1 = new ProductoDigital("Curso JS", 80000, "mensual");
-const d2 = new ProductoDigital("Videojuego Indie", 45000, "de por vida");
+const d1 = new ProductoDigital("BootCamp G", 130000, "Mensual");
+const d2 = new ProductoDigital("Videojuego MineCraft", 29900, "Ilimitado");
 
 console.log("Descuento 20%:", p1.aplicarDescuento(20)); //DESCUENTO 20%
 
